@@ -2,7 +2,24 @@
 <p>Coming Soon</p>
 
 <p>
- 
-      <a href="info@hi-art.me"> Have questions or want to partner with us?</a>
+
      
+<a href="mailto:info@hi-art.me"> Have questions or want to partner with us?</a>
+
+<div class="row">
+  <div class="span6 offset3">
+ 
+<form>
+    <%= form_for User.new do |f| %>
+
+      <%= f.label :email %>
+      <%= f.text_field :email %>
+
+      <%= f.submit "Add to Newsletter", class: "btn btn-large btn-primary" %>
+    <% end %>
+</form>
+  </div>
+</div>
+
+
     </p>
